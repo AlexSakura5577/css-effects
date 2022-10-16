@@ -1,9 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background-color: #0f0f0f;
 }
@@ -14,9 +20,15 @@ label {
   height: 290px;
   border-radius: 50%;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 label input {
@@ -25,11 +37,12 @@ label input {
 
 label input:checked ~ i {
   color: #00ffe7;
-  text-shadow: 0 0 15px #00a1ff, 0 0 30px #00a1ff;
+  text-shadow: 0 0 15px #00a1ff, 0 0 30px #00a1ff;
 }
 
 label input:checked ~ span {
-  box-shadow: 0 0 0 #000, inset 0 -5px 5px #000, inset 0 2px 2px #fff, 0 0 0 10px #000, 0 0 40px 10px #00a1ff, 0 0 0 10px #0f0f0f, 0 0 0 12px #00a1ff;
+  -webkit-box-shadow: 0 0 0 #000, inset 0 -5px 5px #000, inset 0 2px 2px #fff, 0 0 0 10px #000, 0 0 40px 10px #00a1ff, 0 0 0 10px #0f0f0f, 0 0 0 12px #00a1ff;
+          box-shadow: 0 0 0 #000, inset 0 -5px 5px #000, inset 0 2px 2px #fff, 0 0 0 10px #000, 0 0 40px 10px #00a1ff, 0 0 0 10px #0f0f0f, 0 0 0 12px #00a1ff;
 }
 
 label span {
@@ -42,10 +55,12 @@ label span {
   height: 100%;
   background-color: #1b1b1b;
   border-radius: 50%;
-  box-shadow: 0 3px 4px #000, inset 0 -2px 5px #000, inset 0 2px 2px #fff, 0 0 0 2px #000, 0 0 0 5px #0f0f0f, 0 0 0 15px #080808;
+  -webkit-box-shadow: 0 3px 4px #000, inset 0 -2px 5px #000, inset 0 2px 2px #fff, 0 0 0 2px #000, 0 0 0 5px #0f0f0f, 0 0 0 15px #080808;
+          box-shadow: 0 3px 4px #000, inset 0 -2px 5px #000, inset 0 2px 2px #fff, 0 0 0 2px #000, 0 0 0 5px #0f0f0f, 0 0 0 15px #080808;
 }
 
 label .fa {
   z-index: 1;
   font-size: 10em;
 }
+/*# sourceMappingURL=styles.css.map */

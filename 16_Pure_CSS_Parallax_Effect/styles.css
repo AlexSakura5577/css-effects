@@ -9,29 +9,42 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 1px;
-  transform-style: preserve-3d;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 header {
   position: relative;
-  font-family: "Sedgwick Ave", cursive;
+  font-family: 'Sedgwick Ave', cursive;
   color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 50px;
-  transform-style: inherit;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
 }
 
 header:before {
-  content: "";
+  content: '';
   top: 0;
   right: 0;
   bottom: 0;
@@ -41,8 +54,10 @@ header:before {
   background-image: url(https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: 1s linear;
   transition: 1s linear;
-  transform: translatez(-1px) scale(2);
+  -webkit-transform: translatez(-1px) scale(2);
+          transform: translatez(-1px) scale(2);
   z-index: -1;
 }
 
@@ -65,3 +80,4 @@ header p {
   margin: 0;
   font-size: 20px;
 }
+/*# sourceMappingURL=styles.css.map */

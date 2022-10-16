@@ -4,14 +4,22 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background: linear-gradient(45deg, #ee0979, #ff6a00);
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -26,41 +34,68 @@ body {
   color: #ff2626;
   width: 100px;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 30%;
-  box-shadow: -5px 5px 20px -5px #010101;
+  -webkit-box-shadow: -5px 5px 20px -5px #010101;
+          box-shadow: -5px 5px 20px -5px #010101;
   position: relative;
   overflow: hidden;
 }
 
 .container a i {
   font-size: 34px;
-  transition: 0.3s ease;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .container a:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 120%;
   height: 120%;
   background-color: #ff2626;
   left: -110%;
   top: 90%;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .container a:hover i {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   color: #f1f1f1;
 }
 
 .container a:hover:before {
-  animation-name: hover;
-  animation-duration: 0.6s;
+  -webkit-animation-name: hover;
+          animation-name: hover;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
   top: -10%;
   left: -10%;
+}
+
+@-webkit-keyframes hover {
+  0% {
+    top: -110%;
+    left: 90%;
+  }
+  50% {
+    top: 10%;
+    left: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
 }
 
 @keyframes hover {
@@ -77,3 +112,4 @@ body {
     left: -10%;
   }
 }
+/*# sourceMappingURL=styles.css.map */

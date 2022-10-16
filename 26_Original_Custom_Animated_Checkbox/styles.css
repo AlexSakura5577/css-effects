@@ -1,11 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
-  background: radial-gradient(#00ffee, #d585ff);
+  background: radial-gradient(#00FFEE, #D585FF);
 }
 
 input {
@@ -13,16 +19,20 @@ input {
 }
 
 label {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   width: 300px;
   height: 130px;
   padding: 7px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) inset;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) inset;
   border-radius: 65px;
   cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ed1c24), color-stop(45%, #ff5a2f), color-stop(55%, #7fd03e), to(#009e00)) 0 0;
   background: linear-gradient(to right, #ed1c24 0, #ff5a2f 45%, #7fd03e 55%, #009e00 100%) 0 0;
   background-size: 650px 100%;
+  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
@@ -35,18 +45,23 @@ label:before {
   top: 7px;
   font-family: 'Montserrat', sans-serif;
   background: radial-gradient(#ffffff, #f0f0f0);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   border-radius: 100%;
   text-align: center;
   line-height: 116px;
   font-size: 30px;
   color: #ed1c24;
   text-transform: uppercase;
-  transition: left .3s ease, color .3s ease, transform .1s ease;
+  -webkit-transition: left .3s ease, color .3s ease, -webkit-transform .1s ease;
+  transition: left .3s ease, color .3s ease, -webkit-transform .1s ease;
+  transition: left .3s ease, color .3s ease, transform .1s ease;
+  transition: left .3s ease, color .3s ease, transform .1s ease, -webkit-transform .1s ease;
 }
 
 label:active:before {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 input:checked + label {
@@ -58,3 +73,4 @@ input:checked + label:before {
   color: #009e00;
   left: 177px;
 }
+/*# sourceMappingURL=styles.css.map */

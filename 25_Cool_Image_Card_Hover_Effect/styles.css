@@ -1,9 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: linear-gradient(225deg, #ffff7e, #00a8c5);
 }
@@ -14,7 +20,8 @@ figure {
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 0 15px -5px #010101;
+  -webkit-box-shadow: 0 0 15px -5px #010101;
+          box-shadow: 0 0 15px -5px #010101;
 }
 
 figure img {
@@ -37,7 +44,9 @@ figure figcaption h2 {
   color: #3c3c3c;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transform: translatey(20px);
+  -webkit-transform: translatey(20px);
+          transform: translatey(20px);
+  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
@@ -48,23 +57,29 @@ figure figcaption ul {
   position: absolute;
   right: 15px;
   bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 figure figcaption ul li {
   margin: 0 15px;
-  transform: translatey(80px);
+  -webkit-transform: translatey(80px);
+          transform: translatey(80px);
 }
 
 figure figcaption ul li:nth-child(1) {
+  -webkit-transition: .4s .05s;
   transition: .4s .05s;
 }
 
 figure figcaption ul li:nth-child(2) {
+  -webkit-transition: .4s .1s;
   transition: .4s .1s;
 }
 
 figure figcaption ul li:nth-child(3) {
+  -webkit-transition: .4s .15s;
   transition: .4s .15s;
 }
 
@@ -72,6 +87,7 @@ figure figcaption ul .icon {
   text-decoration: none;
   color: #fff;
   font-size: 30px;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
@@ -87,14 +103,18 @@ figure figcaption:before {
   bottom: 0;
   height: 0;
   background: rgba(0, 0, 0, 0.5);
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+          clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
 figure figcaption:hover h2, figure figcaption:hover li {
-  transform: translatey(0);
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
 }
 
 figure figcaption:hover:before {
   height: 150px;
 }
+/*# sourceMappingURL=styles.css.map */

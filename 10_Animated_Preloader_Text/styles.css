@@ -1,15 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: linear-gradient(45deg, #333333, #4c4a4a);
 }
 
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   position: relative;
   color: #212121;
   font-size: 150px;
@@ -22,11 +28,21 @@ h1:before {
   position: absolute;
   top: 0;
   left: 0;
-  content: "Loading...";
+  content: 'Loading...';
   color: #00ffff;
   border-bottom: 18px solid #00ffff;
   overflow: hidden;
-  animation: loading 8s infinite linear;
+  -webkit-animation: loading 8s infinite linear;
+          animation: loading 8s infinite linear;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes loading {
@@ -37,3 +53,4 @@ h1:before {
     width: 100%;
   }
 }
+/*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: #333;
 }
@@ -40,6 +46,7 @@ button .wave {
   width: 250px;
   height: 250px;
   background: linear-gradient(45deg, #4F00BC, #29ABE2);
+  -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
@@ -50,26 +57,43 @@ button .wave:after, button .wave:before {
   height: 200%;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -75%);
+  -webkit-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
 }
 
 button .wave:after {
   border-radius: 40%;
   background: rgba(51, 51, 51, 0.5);
-  animation: wave 7s linear infinite;
+  -webkit-animation: wave 7s linear infinite;
+          animation: wave 7s linear infinite;
 }
 
 button .wave:before {
   border-radius: 45%;
   background: #333333;
-  animation: wave 12s linear infinite;
+  -webkit-animation: wave 12s linear infinite;
+          animation: wave 12s linear infinite;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translate(-50%, -75%) rotate(0deg);
+            transform: translate(-50%, -75%) rotate(0deg);
+  }
+  0% {
+    -webkit-transform: translate(-50%, -75%) rotate(360deg);
+            transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
 
 @keyframes wave {
   0% {
-    transform: translate(-50%, -75%) rotate(0deg);
+    -webkit-transform: translate(-50%, -75%) rotate(0deg);
+            transform: translate(-50%, -75%) rotate(0deg);
   }
   0% {
-    transform: translate(-50%, -75%) rotate(360deg);
+    -webkit-transform: translate(-50%, -75%) rotate(360deg);
+            transform: translate(-50%, -75%) rotate(360deg);
   }
 }
+/*# sourceMappingURL=styles.css.map */
